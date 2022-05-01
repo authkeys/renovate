@@ -8,6 +8,7 @@ import { ConanDatasource } from './conan';
 import { CondaDatasource } from './conda';
 import { CrateDatasource } from './crate';
 import { DartDatasource } from './dart';
+import { DigitalOceanKubernetesDatasource } from './digitalocean-kubernetes';
 import { DockerDatasource } from './docker';
 import { FlutterVersionDatasource } from './flutter-version';
 import { GalaxyDatasource } from './galaxy';
@@ -87,3 +88,7 @@ api.set(SbtPackageDatasource.id, new SbtPackageDatasource());
 api.set(SbtPluginDatasource.id, new SbtPluginDatasource());
 api.set(TerraformModuleDatasource.id, new TerraformModuleDatasource());
 api.set(TerraformProviderDatasource.id, new TerraformProviderDatasource());
+api.set(
+  DigitalOceanKubernetesDatasource.id,
+  new DigitalOceanKubernetesDatasource()
+);
